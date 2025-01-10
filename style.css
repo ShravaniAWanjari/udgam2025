@@ -6,8 +6,42 @@ body{
     overflow: hidden;
 }
 
-.event-banner{
+.event-banner {
     width: 100%;
     height: 100vh;
     object-fit: cover;
+}
+
+/* Hide mobile banner by default */
+.mobile-banner {
+    display: none;
+}
+
+/* For mobile devices (portrait mode) */
+@media screen and (max-width: 768px) {
+    .desktop-banner {
+        display: none;
+    }
+    .mobile-banner {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        object-fit: contain;
+        background-color: #240642;
+    }
+}
+
+/* For mobile devices in landscape mode */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .mobile-banner {
+        object-fit: contain;
+        object-position: center;
+    }
+}
+
+/* For very small devices */
+@media screen and (max-width: 320px) {
+    .event-banner {
+        object-position: center center;
+    }
 }
