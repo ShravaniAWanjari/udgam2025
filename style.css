@@ -1,4 +1,4 @@
-body{
+body {
     padding: 0;
     margin: 0;
     background-color: #240642;
@@ -6,10 +6,14 @@ body{
     overflow: hidden;
 }
 
-.event-banner {
+.event-banner,
+.mobile-banner {
     width: 100%;
     height: 100vh;
-    object-fit: cover;
+    object-fit: cover; /* Use 'cover' for desktop and 'contain' for mobile */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 /* Hide mobile banner by default */
@@ -23,11 +27,13 @@ body{
         display: none;
     }
     .mobile-banner {
-        display: block;
+        display: flex; /* Use flexbox for mobile banner as well */
         width: 100%;
         height: 100vh;
-        object-fit: contain;
+        object-fit: contain; /* Ensure the image fits within the container */
         background-color: #240642;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
     }
 }
 
@@ -35,13 +41,14 @@ body{
 @media screen and (max-width: 768px) and (orientation: landscape) {
     .mobile-banner {
         object-fit: contain;
-        object-position: center;
+        object-position: center; /* Center the image */
     }
 }
 
 /* For very small devices */
 @media screen and (max-width: 320px) {
-    .event-banner {
-        object-position: center center;
+    .event-banner,
+    .mobile-banner {
+        object-position: center center; /* Ensure the image is centered */
     }
 }
