@@ -8693,10 +8693,11 @@ button.bg-dark:focus {
 
 .fixed-top {
   position: fixed;
-  top: 0;
+  top: 5px;
   right: 0;
   left: 0;
   z-index: 1030;
+  bottom: 725px;
 }
 
 .fixed-bottom {
@@ -11197,7 +11198,7 @@ textarea.form-control {
 }
 
 .navbar .navbar-brand img {
-  width: 60px;
+  width: 170px;
 }
 
 .navbar .nav-link {
