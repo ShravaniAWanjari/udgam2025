@@ -11534,7 +11534,8 @@ textarea.form-control {
 }
 
 .section:nth-child(even) {
-  background: url(https://img.freepik.com/premium-photo/purple-background-with-purple-background-that-says-purple_517312-43530.jpg?semt=ais_hybrid) 
+  background: url(https://wallpapercave.com/wp/wp4729228.jpg);
+  background-size: cover;
 }
 
 .section .section-devider {
@@ -11614,7 +11615,7 @@ textarea.form-control {
 
 .section.has-img-bg {
   position: relative;
-  background: url(../imgs/section.jpg) no-repeat center top fixed;
+  background: url(https://woxsen.edu.in/uploads/A20230522054130.webp) no-repeat center top fixed;
   background-size: cover;
   color: #fff;
 }
